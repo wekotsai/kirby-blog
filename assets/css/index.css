@@ -26,6 +26,14 @@ header {
     justify-content: space-between;
 }
 
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+
 .menu {
     display: flex;
 }
@@ -36,4 +44,11 @@ header {
 
 .menu a:hover {
     color: #fe673a;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;   
+    grid-gap: 1.5rem;
 }
