@@ -17,7 +17,8 @@ html {
 
 body {
     margin: 3rem; 
-    background-color: #fbfbfb;
+    background-color: #f9c6cf;
+    color: #2b292a;
 }
 
 header {
@@ -27,11 +28,21 @@ header {
 }
 
 h1 {
-    margin-bottom: 1.5rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
 }
 
 img {
     width: 100%;
+}
+
+li {
+    list-style: none;  
+}
+
+.logo {
+    width: 6em;
 }
 
 .menu {
@@ -39,16 +50,22 @@ img {
 }
 
 .menu a {
+    margin-top: 6rem;
     margin-left: 1.5rem;
 }
 
 .menu a:hover {
-    color: #fe673a;
+    color: #ffffff;
 }
 
 .blog {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    list-style: none;   
+    grid-template-columns: repeat(3, 1fr); 
     grid-gap: 1.5rem;
+}
+
+.gallery {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
 }

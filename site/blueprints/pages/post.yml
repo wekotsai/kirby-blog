@@ -1,18 +1,24 @@
 title: Post
 
-sections:
-  gallery:
-    type: files
-    layout: cards
-    image:
-      cover: true 
-      ratio: 1/1
-  content:
-    type: fields
-    fields:
-      heading:
-        type: text
-      text:
-        type: textarea  
+columns:
+  left:
+    width: 1/2
+    sections:
+      gallery:
+        type: files
+        layout: cards
+        image:
+          cover: true 
+          ratio: 1/1
+  right:
+    width: 1/2
+    sections:        
+      content:
+        type: fields
+        fields:
+          heading:
+            type: text
+          text:
+            type: textarea  
 
 

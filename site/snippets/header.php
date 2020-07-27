@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="<?= $site->url() ?>"><?= $site->title() ?></a>
+        <a class="logo" href="<?= $site->url() ?>">
+            <img src="<?= url('assets/images/logo.jpg') ?>" alt="">
+        </a>
     
         <nav class="menu">
             <?php foreach ($site->children()->listed() as $subpage): ?>
@@ -17,7 +19,7 @@
         </nav>
     </header>
     
-    <h1><?= $page->title() ?></h1>
+    <h1><?= $page->title()->not('home') ?></h1>
     <?= $page->text() ?>
 
 </body>
