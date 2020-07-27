@@ -1,0 +1,18 @@
+title: Post
+
+sections:
+  gallery:
+    type: files
+    layout: cards
+    image:
+      cover: true 
+      ratio: 1/1
+  content:
+    type: fields
+    fields:
+      heading:
+        type: text
+      text:
+        type: textarea  
+
+

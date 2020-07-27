@@ -1,11 +1,10 @@
 <?php snippet('header') ?>
     
-<ul class="blog">
-    <?php foreach ($page->children() as $project): ?>
+<ul class="gallery">
+    <?php foreach ($page->images() as $image): ?>
     <li>
-        <a href="<?= $project->url() ?>">
-            <?= $project->image()->crop(500) ?>
-            <?= $project->title() ?>
+        <a href="<?= $image->url() ?>">
+            <?= $image->resize(1000) ?>
         </a>
     </li>
     <?php endforeach ?>
