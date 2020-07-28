@@ -1,5 +1,11 @@
 <?php snippet('header') ?>
     
-<img class="banner" src="<?= url('assets/images/sakura.jpg') ?>" alt="">
+    <img class="homeImg" src="<?= url('assets/images/dancer.jpg') ?>" alt="">
+    
+<?php snippet('blog', [
+    'blog' => page('blog')
+        ->children()
+        ->limit(3)    
+]) ?>  
 
 <?php snippet('footer') ?>
