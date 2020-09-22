@@ -1,3 +1,93 @@
 title: Site
-preset: pages
-unlisted: true
+tabs:
+  # content tab
+  content:
+    label: Global Content
+    icon: text
+    columns:
+      # main
+      left:
+        width: 2/3
+        sections:
+          # a simple form
+          content:
+            type: fields
+            fields:
+              globalvariables:
+                label: Global variables
+                type: headline
+                numbered: false
+              socialmedia:
+                label: (Social-)media Links
+                type: structure
+                fields:
+                  icon:
+                    label: Icon
+                    type: files
+                    multiple: false
+                    query: site.images
+                  title:
+                    label: Title
+                    type: text
+                  url:
+                    label: link
+                    type: text
+              footerheadline:
+                label: Footer
+                type: headline
+                numbered: false
+              footerlinks:
+                label: Footer Links
+                type: pages
+              footercopyright:
+                label: Copyright
+                type: text
+      # sidebar
+      right:
+        width: 1/3
+        sections:
+          # a list of subpages
+          pages:
+            type: pages
+            headline: Pages
+            templates:
+              - default
+              - magazine
+          # a list of files
+          files:
+            type: files
+            headline: Files
+  # seo tab
+  seo:
+    label: SEO Infos
+    icon: search
+    fields:
+      seotitle:
+        label: SEO Title
+        type: text
+      seodescription:
+        label: SEO Description
+        type: text
+      seometatags:
+        label: Meta tags
+        type: structure
+        fields:
+          metaname:
+            label: Meta name
+            type: text
+          metacontent:
+            label: Meta content
+            type: text
+        width: 1/2
+      seoshareimage:
+        label: Share Image
+        help: 1200x630 pixel
+        type: files
+        query: site.images
+        max: 1
+        multiple: false
+        width: 1/2
+ # Site Generator
+ fields:
+  staticSiteGenerator:
+    label: Generate a static version of the site

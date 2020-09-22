@@ -19,7 +19,13 @@
         </nav>
     </header>
     
-    <h1><?= $page->title()->not('home') ?></h1>
+    <h1>
+    <?php 
+        if ($page->template() != 'home') {
+            echo $page->title();
+        }
+        ?>
+    </h1>
     <?= $page->text() ?>
 
 </body>

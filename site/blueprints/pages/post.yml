@@ -18,6 +18,8 @@ columns:
         fields:
           heading:
             type: text
+          featured:
+            type: toggle
           text:
             type: textarea  
 
