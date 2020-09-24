@@ -1,9 +1,36 @@
-Title: Gatsby JS
+Title: Javascript 101
 
 ----
 
-Heading: What I learnt today
+Heading: Javascript 101
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Featured: false
+
+----
+
+Text:
+
+### Target element
+A DOMString representing the position relative to the targetElement; must match (case-insensitively) one of the following strings: `element.insertAdjacentText(‘ beforehand ’,  ‘ Hiya ’);`
+1. 'beforebegin': Before the targetElement itself.
+2. 'afterbegin': Just inside the targetElement, before its first child.
+3. 'beforeend': Just inside the targetElement, after its last child.
+4. 'afterend': After the targetElement itself
+5. `targetElement.insertAdjacentElement(position, element);`
+
+###Console elements
+Dev tools > Network > XHR allows you to see the raw data
+1. In dev tools - `$0` to look up element
+2. `$0` is the last element you clicked, `$1` is the second last element you clicked
+3. `$( 'p' )` the first one that matches the selector
+4. `$$( 'p' )` all the ones that match the selector
+
+**Equality comparison operator**
+1. Both abstract equality operator `==` and strict equality operator `===` are case sensitive
+2. Almost always we should use `===` it always checks the value and the type
+3. I.e. `“10” == 10` is *true* but `“10” === 10` *false*
+
+###querySelector vs querySelectorAll
+The former selects one single element whereas the latter selects a list of elements

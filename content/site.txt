@@ -10,7 +10,7 @@ Footerlinks:
 
 ----
 
-Footercopyright: All rights reserved TUB 2020
+Footercopyright: © 2020 TUB All rights reserved
 
 ----
 
@@ -27,3 +27,7 @@ Seometatags:
 ----
 
 Seoshareimage: 
+
+----
+
+Deploy: false

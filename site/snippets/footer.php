@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
     <?php echo $site->footercopyright() ?>
 </footer>
 

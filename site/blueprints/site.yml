@@ -52,7 +52,7 @@ tabs:
             headline: Pages
             templates:
               - default
-              - magazine
+              - blog
           # a list of files
           files:
             type: files
@@ -87,7 +87,11 @@ tabs:
         max: 1
         multiple: false
         width: 1/2
- # Site Generator
- fields:
+  # Site Generator
   staticSiteGenerator:
-    label: Generate a static version of the site
+    label: Generate static site
+    icon: upload
+    fields:
+      deploy:
+        label: Deploy to production
+        type: staticSiteGenerator

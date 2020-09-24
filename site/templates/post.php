@@ -1,4 +1,6 @@
 <?php snippet('header') ?>
+
+<?= $page->text()->kt() ?>
     
 <ul class="gallery">
     <?php foreach ($page->images() as $image): ?>

@@ -1,9 +1,20 @@
-Title: Github
+Title: CLI
 
 ----
 
-Heading: What I learnt today
+Heading: CLI
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Featured: false
+
+----
+
+Text:
+
+**Update the master:**
+1. Commit/stash all the changes you’re working on in your current branch `git commit -m " "` or `git stash`
+2. Switch to master `git checkout master`
+3. `git fetch` then `git pull` to update master
+4. Switch to branch you were working on
+5. `git merge master` and pray there isn’t a merge conflict

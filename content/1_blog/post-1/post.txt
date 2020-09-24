@@ -1,9 +1,26 @@
-Title: CLI vs GUI
+Title: Anchor scrolling position
 
 ----
 
-Heading: What I learnt today
+Heading: Anchor scrolling position
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Featured: false
+
+----
+
+Text:
+
+Here are a few tips for anchor links that scroll too far down: 
+
+1. Add a pseudo element `::before` along with `content: " ";` and
+ `display: block;`
+ 
+2. Add an `<a>` tag with an id right before the targeted element
+
+3. Add `scroll-margin` (append to parent div not pseudo element)
+
+Notes: 
+scroll margin doesn’t work on Safari, please refer to (link: caniuse text: https://caniuse.com/?search=scroll-margin-top)
+`display: block;` might affect the original layout

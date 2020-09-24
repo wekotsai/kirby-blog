@@ -1,9 +1,33 @@
-Title: JSX
+Title: Accessibility
 
 ----
 
-Heading: What I learnt today
+Heading: How to create a "skip link"
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Featured: false
+
+----
+
+Text:
+
+### Skip to content links 
+
+Skip links allow screenreader to skip the navigation bar and avoid repetition. 
+
+The key is to hide the button by default and display when 'escape' is pressed. 
+
+Here's a simple example:
+
+```
+.skip-link {
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+```
