@@ -1,8 +1,13 @@
-Title: The Ultra Bright
+Title: Uber Berliner
 
 ----
 
-Socialmedia: 
+Socialmedia:
+
+- 
+  icon: [ ]
+  title: Instagram
+  url: https://www.instagram.com/wekotsai/
 
 ----
 
@@ -10,7 +15,7 @@ Footerlinks:
 
 ----
 
-Footercopyright: © 2020 TUB All rights reserved
+Footercopyright: © 2020 Uber Berliner. All Rights Reserved
 
 ----
 

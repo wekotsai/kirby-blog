@@ -20,6 +20,7 @@ The key is to hide the button by default and display when 'escape' is pressed.
 
 Here's a simple example:
 
+
 ```
 .skip-link {
   left: 50%;

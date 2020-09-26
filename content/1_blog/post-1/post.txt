@@ -14,8 +14,7 @@ Text:
 
 Here are a few tips for anchor links that scroll too far down: 
 
-1. Add a pseudo element `::before` along with `content: " ";` and
- `display: block;`
+1. Add a pseudo element `::before` along with `content: " ";` and `display: block;`
  
 2. Add an `<a>` tag with an id right before the targeted element
 

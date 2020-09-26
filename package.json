@@ -1,0 +1,10 @@
+{
+    "name": "uberberliner",
+    "version": "1.0.0",
+    "repository": "https://github.com/wekotsai/kirby-blog.git",
+    "scripts": {
+      "start": "php -S localhost:8000 kirby/router.php",
+      "build": "php generate-static-site.php",
+      "deploy": "npm run build && cd static && git add . && git commit && git push"
+    }
+  }

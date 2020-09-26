@@ -9,7 +9,7 @@
 <body>
     <header>
         <a class="logo" href="<?= $site->url() ?>">
-            <img src="<?= url('assets/images/logo.jpg') ?>" alt="">
+            <img src="<?= url('assets/images/ub-logo.png') ?>" alt="">
         </a>
     
         <nav class="menu">
@@ -23,7 +23,7 @@
     <?php 
         if ($page->template() != 'home') {
             echo $page->title();
-        }
+          }
         ?>
     </h1>
 

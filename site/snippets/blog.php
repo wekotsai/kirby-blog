@@ -5,7 +5,7 @@
         <?php if ($project->image()): ?>
           <?= $project->image()->crop(500) ?>
         <?php endif ?>
-        <?= $project->title() ?>
+        <p class="blog-title"><?= $project->title() ?></p>
       </a> 
     </li>
   <?php endforeach ?>
