@@ -26,19 +26,16 @@ html {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-  margin: 2rem ; 
+body { 
   background-color: #ffffff;
   color: #2b292a;
 }
 
 header {
-  margin: -2.5rem;
   padding: 2rem 2em;
   display: flex;
   background-color: #f9c6cf;
   justify-content: space-between;
-  border-bottom: solid 3px; 
 }
 
 h1 {
@@ -49,10 +46,6 @@ h1 {
 
 img {
   width: 100%;
-}
-
-.blog, .gallery li {
-  list-style: none;  
 }
 
 ol {
@@ -91,21 +84,21 @@ ol li {
   grid-gap: 2rem;
 }
 
+.blog, .gallery li {
+  list-style: none;  
+}
+
 .gallery {
   width: 60%;
   margin: 0 auto;
   padding: 2rem;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0;
-}
+/* HOME */
 
 .header-home { 
   height: 35rem;
-  border-bottom: solid 5px; 
+  /* border-bottom: solid 5px;  */
 }
 
 .logo-home img {
@@ -128,6 +121,29 @@ ol li {
 .menu-item a:hover {
   text-decoration: line-through;
   color: #ffffff;
+}
+
+/* FOOTER */
+
+.footer {
+  display: block;
+  margin: 3rem 2rem;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+}
+
+.socialmedia img {
+  width: 3em;
+  margin-right: 1em;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 600px) {

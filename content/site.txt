@@ -5,9 +5,15 @@ Title: Uber Berliner
 Socialmedia:
 
 - 
-  icon: [ ]
+  icon:
+    - instagram.png
   title: Instagram
   url: https://www.instagram.com/wekotsai/
+- 
+  icon:
+    - github.png
+  title: Github
+  url: https://github.com/wekotsai
 
 ----
 
