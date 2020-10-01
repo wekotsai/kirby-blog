@@ -1,6 +1,6 @@
 <ul class="blog">
   <?php foreach ($blog as $project): ?>
-    <li>
+    <li class="blog-post">
       <a href="<?= $project->url() ?>">
         <?php if ($project->image()): ?>
           <?= $project->image()->crop(500) ?>

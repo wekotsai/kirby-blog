@@ -1,3 +1,1 @@
-<?php snippet('header-home') ?>
-
-<?php snippet('footer') ?>
+<?php snippet('home') ?>
