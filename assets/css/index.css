@@ -32,13 +32,6 @@ body {
   font-family: "Mabry", sans-serif;
 }
 
-header {
-  padding: 2rem 2em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 h1 {
   margin: 6rem 0 3rem 0;
   display: flex;
@@ -57,31 +50,40 @@ ol li {
   padding: 1rem;
 }
 
-.logo {
-  width: 10em;
-}
-
 .logo span {
   width: 10em;
   font-size: 3em;
   letter-spacing: 0.25vw;
 }
-  
+
+/* HEADER */
+
+header {
+  padding: 2rem 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* MENU */  
 
-.menu {
+.nav {
   display: flex;
 }
 
-.menu a {
+.nav a {
   margin-top: 6rem;
   margin-left: 1.5rem;
   font-weight: 600;
 }
 
-.menu a:hover {
+.nav a:hover {
   text-decoration: line-through;
   color: currentColor;
+}
+
+.nav li {
+  list-style: none;
 }
 
 .blog {
@@ -199,10 +201,38 @@ ol li {
   margin-top: 1em;
 }
 
+.menu__checkbox {
+  display: none;
+}
+
+.tags {
+  display: flex;
+  margin: 2rem;
+  list-style: none;
+}
+
+.tag {
+  margin: 1rem;
+  border: solid 1px #2b292a;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.btn {
+  background-color: #2b292a;
+  width: 100px;
+  color: #ffffff;
+  border-radius: 10px;
+}
 
 /* MOBILE */
 
 @media only screen and (max-width: 600px) {
+    h1 {
+      margin: 6rem 2rem 3rem 2rem;
+    }
+    
     .blog {
       grid-template-columns: none;
     }
@@ -214,6 +244,7 @@ ol li {
   
     header {
       align-items: start;
+      display: block;
     }
   
     .home-wrapper {
@@ -232,11 +263,142 @@ ol li {
     }
   
     .wrapper {
-      background: url("../images/berlin.jpg") no-repeat left/280%;
+      background: url("../images/berlin.jpg") no-repeat left/330%;
     }
   
     .title {
       font-size: 8vw; 
       margin-top: -32rem;
     }
-  }
+
+    /* HAMBURGER MOBILE */
+
+    .nav {
+        color: #ffffff;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+        width: 100%;
+        z-index: 3;
+    }
+
+    .nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .nav li a {
+        color: #000;
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+    }
+
+    .nav a {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav a:hover {
+        color: #2b292a;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav li a:hover,
+    .nav li a:focus,
+    .menu__checkbox:hover,
+    .menu__checkbox:focus,
+    :focus {
+        background-color: #f4f4f4;
+    }
+
+
+    /* menu */
+
+    .menu {
+        display: none;
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+
+
+    /* menu icon */
+
+    .menu__icon {
+        cursor: pointer;
+        display: block;
+        float: right;
+        padding: 0 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    .hamburger {
+        background: #333;
+        display: block;
+        height: 3px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 30px;
+        margin-top: -1.5rem;
+    }
+
+    .hamburger:before,
+    .hamburger:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .5s ease-out;
+        width: 100%;
+    }
+
+    .hamburger:before {
+        top: 8px;
+    }
+
+    .hamburger:after {
+        top: -8px;
+    }
+
+
+    /* menu checkbox */
+
+    .menu__checkbox {
+        opacity: 0;
+    }
+
+    .menu__checkbox:checked~.menu {
+        max-height: 240px;
+        display: block;
+    }
+
+    .menu__checkbox:focus~.menu__icon {
+        outline: #5E9ED6 1px solid;
+        background-color: #f4f4f4;
+    }
+
+    .menu__checkbox:checked~.menu__icon .hamburger {
+        background: transparent;
+    }
+
+    .menu__checkbox:checked~.menu__icon .hamburger:before {
+        transform: rotate(-225deg);
+    }
+
+    .menu__checkbox:checked~.menu__icon .hamburger:after {
+        transform: rotate(225deg);
+    }
+
+    .menu__checkbox:checked~.menu__icon:not(.steps) .hamburger:before,
+    .menu__checkbox:checked~.menu__icon:not(.steps) .hamburger:after {
+        top: 0;
+    }
+}

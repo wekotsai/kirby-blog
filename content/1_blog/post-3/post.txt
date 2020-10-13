@@ -10,6 +10,10 @@ Featured: false
 
 ----
 
+Tags: kirby
+
+----
+
 Text:
 
 **Google structured data** 

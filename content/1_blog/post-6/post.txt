@@ -10,6 +10,10 @@ Featured: false
 
 ----
 
+Tags: php
+
+----
+
 Text:
 
 **Update the master:**

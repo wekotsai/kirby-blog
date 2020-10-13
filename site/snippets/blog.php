@@ -1,5 +1,5 @@
 <ul class="blog">
-  <?php foreach ($blog as $project): ?>
+  <?php foreach ($articles as $project): ?>
     <li class="blog-post">
       <a href="<?= $project->url() ?>">
         <?php if ($project->image()): ?>

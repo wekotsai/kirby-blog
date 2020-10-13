@@ -20,7 +20,13 @@ columns:
             type: text
           featured:
             type: toggle
+            width: 1/2
+          tags:
+            label: Tags
+            type: tags
+            layout: list
+            width: 1/2
           text:
-            type: textarea  
+            type: textarea 
 
 
