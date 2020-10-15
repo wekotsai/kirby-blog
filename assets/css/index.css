@@ -103,6 +103,10 @@ header {
   box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
 }
 
+.tags a {
+  display: block;
+}
+
 .gallery {
   list-style: none; 
   width: 60%;
@@ -207,6 +211,7 @@ header {
 
 .tags {
   display: flex;
+  justify-content: center;
   margin: 2rem;
   list-style: none;
 }
@@ -221,7 +226,9 @@ header {
 
 .btn {
   background-color: #2b292a;
+  text-align: center;
   width: 100px;
+  margin-right: 10px;
   color: #ffffff;
   border-radius: 10px;
 }

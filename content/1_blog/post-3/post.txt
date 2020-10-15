@@ -10,7 +10,7 @@ Featured: false
 
 ----
 
-Tags: kirby
+Tags: Kirby
 
 ----
 
