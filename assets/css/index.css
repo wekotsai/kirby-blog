@@ -78,8 +78,7 @@ header {
 }
 
 .nav a:hover {
-  text-decoration: line-through;
-  color: currentColor;
+  border-bottom: dotted 5px pink;
 }
 
 .nav li {
@@ -96,6 +95,7 @@ header {
 .blog-title {
   text-align: center;
   margin: 1rem;
+  font-weight: 700;
 }
 
 .blog-post {
@@ -179,7 +179,8 @@ header {
 }
 
 .menu-item a:hover {
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
+  border-bottom: dotted 5px white;
 }
 
 /* FOOTER */
