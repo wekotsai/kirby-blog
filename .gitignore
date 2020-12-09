@@ -42,3 +42,5 @@ Icon
 
 # Local Netlify folder
 .netlify
+
+/static
