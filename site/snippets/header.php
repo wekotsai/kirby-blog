@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $site->title() ?></title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
-
-    <?= css('assets/css/index.css') ?>
+    <?= css(['assets/css/index.css', 'assets/css/prism.css',]) ?>
+    
 </head>
 <body>  
   <header>
@@ -33,6 +33,6 @@
     ?>
   </h1>
 
-<script src="assets/js/index.js"></script>
+<?= js(['assets/js/index.js', 'assets/js/prism.js',]) ?>
 </body>
 </html>
