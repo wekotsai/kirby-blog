@@ -16,6 +16,8 @@ Tags: JS
 
 Text:
 
+<pre><code class="language-css">p { color: red }</code></pre>
+
 Here are a few tips for anchor links that scroll too far down: 
 
 1. Add a pseudo element `::before` along with `content: " ";` and `display: block;`

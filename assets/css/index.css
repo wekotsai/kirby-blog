@@ -15,12 +15,12 @@ h3 {
   padding-bottom: 1em;
 }
 
-code {
+/* code {
   background-color: #e7e7e7e7;
   color: #d00a76;
   font-weight: 600;
   padding: 2px;
-}
+} */
 
 html {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -78,7 +78,7 @@ header {
 }
 
 .nav a:hover {
-  border-bottom: dotted 5px pink;
+  border-bottom: dotted 4px #2b292a;
 }
 
 .nav li {
@@ -95,7 +95,6 @@ header {
 .blog-title {
   text-align: center;
   margin: 1rem;
-  font-weight: 700;
 }
 
 .blog-post {
