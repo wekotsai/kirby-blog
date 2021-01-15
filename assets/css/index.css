@@ -15,12 +15,17 @@ h3 {
   padding-bottom: 1em;
 }
 
-/* code {
-  background-color: #e7e7e7e7;
-  color: #d00a76;
-  font-weight: 600;
+code {
+  background-color: #ffeff0;;
+  color: #000;
   padding: 2px;
-} */
+  font-family: monaco, Consolas, Lucida Console, monospace; 
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+}
 
 html {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -33,9 +38,14 @@ body {
 }
 
 h1 {
+  font-size: 64px;
+  line-height: 64px;
   margin: 6rem 0 3rem 0;
   display: flex;
   justify-content: center;
+  font-weight: 300;
+  font-family: lato-light, Helvetica Neue, helvetica, arial, sans-serif;
+  color: #2b2b2b;
 }
 
 img {
@@ -59,10 +69,11 @@ ol li {
 /* HEADER */
 
 header {
-  padding: 2rem 2em;
+  padding: 1rem 2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ddd;
 }
 
 /* MENU */  
@@ -72,13 +83,14 @@ header {
 }
 
 .nav a {
+  font-family: Lato, helvetica, sans-serif;
   margin-top: 6rem;
   margin-left: 1.5rem;
   font-weight: 600;
 }
 
 .nav a:hover {
-  border-bottom: dotted 4px #2b292a;
+  color: rgb(238, 0, 0);
 }
 
 .nav li {
@@ -88,13 +100,17 @@ header {
 .blog {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  grid-gap: 2rem;
-  padding: 0 2rem;
+  grid-gap: 3rem;
+  padding: 6rem;
 }
 
 .blog-title {
   text-align: center;
   margin: 1rem;
+  font-family: lato-light,Helvetica Neue,helvetica,arial,sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: 0.11px;
 }
 
 .blog-post {
@@ -114,7 +130,7 @@ header {
 }
 
 .post {
-  padding: 2rem;
+  padding: 2rem 8rem;
 }
 
 /* HOME */
@@ -178,8 +194,18 @@ header {
 }
 
 .menu-item a:hover {
-  /* text-decoration: line-through; */
-  border-bottom: dotted 5px white;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+}
+
+.breadcrumb p:not(:last-child)::after {
+  margin-left: -0.25em;
+  padding: 6px;
+  content: "/";
 }
 
 /* FOOTER */

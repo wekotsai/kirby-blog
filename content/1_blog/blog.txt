@@ -1,5 +1,0 @@
-Title: Tech
-
-----
-
-Tags: JS, PHP, Kirby

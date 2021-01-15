@@ -10,7 +10,7 @@
 <body>  
   <header>
     <a class="logo" href="<?= $site->url() ?>">
-      <span class="logo-home">uber <br> berliner</span>
+      <span class="logo-home">uber berliner</span>
     </a>
     <nav class="nav" role="navigation">
       <input class="menu__checkbox" type="checkbox" role="Menu" aria-label="Menu" aria-controls="navigation" aria-haspopup="true" id="menu">
@@ -18,7 +18,7 @@
         <ul class="menu" role="menuitem">
           <li>
             <?php foreach ($site->children()->listed() as $subpage): ?>
-              <a href="<?= $subpage->url() ?>"><?= $subpage->title() ?></a>
+              <a href="<?= $subpage->url() ?>"><?= $subpage->title()->upper() ?></a>
             <?php endforeach ?>
           </li>  
         </ul>

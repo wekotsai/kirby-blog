@@ -1,0 +1,13 @@
+Title: Tech
+
+----
+
+Subtitle: yoooo
+
+----
+
+Text: jpjo
+
+----
+
+Tags: JS, PHP, Kirby
