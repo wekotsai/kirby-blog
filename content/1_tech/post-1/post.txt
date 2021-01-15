@@ -1,8 +1,8 @@
-Title: Anchor scrolling position
+Title: CSS Tricks
 
 ----
 
-Heading: Anchor scrolling position!!
+Heading: CSS Tricks
 
 ----
 
@@ -10,13 +10,13 @@ Featured: false
 
 ----
 
-Tags: JS
+Tags: 
 
 ----
 
 Text:
 
-<pre><code class="language-css">p { color: red }</code></pre>
+###Anchor scrolling position
 
 Here are a few tips for anchor links that scroll too far down: 
 

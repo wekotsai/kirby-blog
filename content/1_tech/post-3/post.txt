@@ -19,12 +19,13 @@ Text:
 **Google structured data** 
 1. In Json:
 Wrap *@id* and *name* in item  
+<pre><code class="language-css">
 `"item":
      {
        "@id": "https://www.data4life.care/en/what-we-do/",
        "name": "What we do"
      }`
-
+</pre></code>
 2. In code editor:
 Add URL base before `$crumb->url()`
 `"@id": "<?php echo str_replace($kirby->url('index'), $site->globalsiteurl(), $crumb->url()) ?>"`

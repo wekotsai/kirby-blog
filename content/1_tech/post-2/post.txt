@@ -10,6 +10,10 @@ Featured: false
 
 ----
 
+Tags: JS
+
+----
+
 Text:
 
 ### Skip to content links 
@@ -21,7 +25,7 @@ The key is to hide the button by default and display when 'escape' is pressed.
 Here's a simple example:
 
 
-```
+<pre><code class="language-css">
 .skip-link {
   left: 50%;
   position: absolute;
@@ -31,8 +35,4 @@ Here's a simple example:
 .skip-link:focus {
   transform: translateY(0%);
 }
-```
-
-----
-
-Tags: JS
+</pre></code>
