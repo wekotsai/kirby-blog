@@ -18,7 +18,9 @@ Text:
 
 ###How did I build my blog?
 In short, I used Kirby + Netlify!
-1. Here's an awesome *(link: https://github.com/d4l-data4life/kirby3-static-site-generator text: Kirby plugin)* that was built by my colleague Jonathan and allows you to generate static files.
-2. Create a new repository ie kirby-blog-static
-3. Set up Netlify: Run `netlify-init` 
-4. To deploy: Run `netlify deploy --prod`
+1. Here's an awesome *(link: https://github.com/d4l-data4life/kirby3-static-site-generator text: Kirby plugin)* built by my colleague Jonathan Reisdorf which allows you to generate static files in Kirby.
+2. Create a new repository for the static files.
+3. Set up Netlify: Run `netlify-init`
+4. Once the changes are pushed in `kirby-blog`, hit **Generate Static Site**
+5. Make sure you're in the correct depository. In my case, I created a new repository named `kirby-blog-static`
+6. To deploy: Run `netlify deploy --prod` or simply push the changes.

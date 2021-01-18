@@ -16,6 +16,16 @@ Tags:
 
 Text:
 
+###How to prevent svg from shrinking in flex container
+`flex-shrink: 0;`
+
+
+### How to center an image horizontally within a div
+<pre><code class="language-css">
+display: block;
+margin: auto;
+</pre></code>
+
 ###Anchor scrolling position
 
 Here are a few tips for anchor links that scroll too far down: 

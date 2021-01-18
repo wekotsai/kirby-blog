@@ -16,8 +16,14 @@ Tags: Kirby
 
 Text:
 
-**Google structured data** 
-1. In Json:
+###How to sort by date
+Sort articles by publication date:  `sortBy('published', desc)`
+When wrapped in a `filterBy` parenthesis, everything has to be **lower-cased**
+⭕(pressrelease) 
+❌ (pressRelease)
+
+###Google structured data
+1. In JSON:
 Wrap *@id* and *name* in item  
 <pre><code class="language-css">
 `"item":
@@ -30,7 +36,7 @@ Wrap *@id* and *name* in item
 Add URL base before `$crumb->url()`
 `"@id": "<?php echo str_replace($kirby->url('index'), $site->globalsiteurl(), $crumb->url()) ?>"`
 
-**Add new cards in Kirby**
+###Add new cards in Kirby
 1. Display cards:
 `<?php foreach ($data->helpfulCards()->toFiles() as $card)  
     echo '<a href="#">' .$card. '</a>'
