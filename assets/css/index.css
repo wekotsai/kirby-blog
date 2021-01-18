@@ -229,6 +229,7 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 1em;
+  text-align: center;
 }
 
 .menu__checkbox {
@@ -263,11 +264,25 @@ header {
 
 @media only screen and (max-width: 600px) {
     h1 {
-      margin: 6rem 2rem 3rem 2rem;
+      margin: 4rem 2rem 3rem 2rem;
+      font-size: 48px;
     }
     
     .blog {
       grid-template-columns: none;
+      padding: 3rem;
+    }
+
+    .blog-title {
+      font-size: 1.2em;
+    }
+
+    .breadcrumb { 
+      display: none;
+    }
+
+    .post {
+      padding: 2rem;
     }
   
     .gallery {
@@ -283,9 +298,9 @@ header {
     .home-wrapper {
       display: grid;
     }
-  
-    .logo-home {
-      font-size: 4.5em;
+
+    .logo span {
+      font-size: 2em;
     }
   
     .menu-home {
@@ -296,7 +311,7 @@ header {
     }
   
     .wrapper {
-      background: url("../images/berlin.jpg") no-repeat left/330%;
+      background: url("../images/berlin.jpg") no-repeat left/350%;
     }
   
     .title {
