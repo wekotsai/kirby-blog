@@ -40,11 +40,12 @@ body {
 h1 {
   font-size: 64px;
   line-height: 64px;
-  margin: 6rem 0 3rem 0;
+  margin: 6rem 0 2rem 6rem;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   font-weight: 300;
-  font-family: lato-light, Helvetica Neue, helvetica, arial, sans-serif;
+  letter-spacing: 0.25vw;
+  font-family: 'Bebas Neue';
   color: #2b2b2b;
 }
 
@@ -62,14 +63,15 @@ ol li {
 
 .logo span {
   width: 10em;
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: 0.25vw;
 }
 
 /* HEADER */
 
 header {
-  padding: 1rem 2em;
+  padding: 1rem 0;
+  margin: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,17 +107,21 @@ header {
 }
 
 .blog-title {
-  text-align: center;
-  margin: 1rem;
+  text-align: left;
+  margin: 0.75em 0;
+  padding-bottom: 0.25em;
   font-family: lato-light,Helvetica Neue,helvetica,arial,sans-serif;
   font-weight: 300;
   font-size: 1.5em;
   letter-spacing: 0.11px;
 }
 
+.blog-title:hover {
+  font-style: italic;
+}
+
 .blog-post {
   list-style: none; 
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
 }
 
 .tags a {
@@ -130,7 +136,7 @@ header {
 }
 
 .post {
-  padding: 2rem 8rem;
+  padding: 3rem 8rem;
 }
 
 /* HOME */
@@ -199,7 +205,8 @@ header {
 
 .breadcrumb {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 6rem;
 }
 
 .breadcrumb p:not(:last-child)::after {
@@ -291,16 +298,14 @@ header {
     }
   
     header {
+      padding: 1rem 2em;
+      margin: 0;
       align-items: start;
       display: block;
     }
   
     .home-wrapper {
       display: grid;
-    }
-
-    .logo span {
-      font-size: 2em;
     }
   
     .menu-home {
