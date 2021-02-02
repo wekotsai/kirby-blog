@@ -18,9 +18,7 @@ Text:
 
 ###How to sort by date
 Sort articles by publication date:  `sortBy('published', desc)`
-When wrapped in a `filterBy` parenthesis, everything has to be **lower-cased**
-⭕(pressrelease) 
-❌ (pressRelease)
+When wrapped in a `filterBy` parenthesis, everything has to be **lower-cased** ⭕(pressrelease) ❌(pressRelease)
 
 ###Google structured data
 1. In JSON:
@@ -34,13 +32,14 @@ Wrap *@id* and *name* in item
 </pre></code>
 2. In code editor:
 Add URL base before `$crumb->url()`
+
 `"@id": "<?php echo str_replace($kirby->url('index'), $site->globalsiteurl(), $crumb->url()) ?>"`
 
 ###Add new cards in Kirby
 1. Display cards:
-`<?php foreach ($data->helpfulCards()->toFiles() as $card)  
+<?php foreach ($data->helpfulCards()->toFiles() as $card)  
     echo '<a href="#">' .$card. '</a>'
-  ?>`
+  ?>
 2. Icons: `echo $block->faqicon()->toFile()`
 3. Captions under icons: `str::unhtml($block->introtext()->kt()) to removed all html tags`
 4. Links: Generated ids using `Str::slug()`

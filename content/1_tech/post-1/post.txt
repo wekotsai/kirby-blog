@@ -16,7 +16,14 @@ Tags:
 
 Text:
 
-###How to prevent svg from shrinking in flex container
+### If the margin property has three values:
+`margin: 1em 0 2em;`
+top margin is **1em**
+right and left margins are **0**
+bottom margin is **2em**
+
+
+### How to prevent SVG from shrinking in flex container
 `flex-shrink: 0;`
 
 
@@ -26,7 +33,7 @@ display: block;
 margin: auto;
 </pre></code>
 
-###Anchor scrolling position
+### Anchor scrolling position
 
 Here are a few tips for anchor links that scroll too far down: 
 
@@ -35,6 +42,14 @@ Here are a few tips for anchor links that scroll too far down:
 2. Add an `<a>` tag with an id right before the targeted element
 
 3. Add `scroll-margin` (append to parent div not pseudo element)
+
+<pre><code class="language-css">
+ display: block;
+ content: " ";
+ height: calc((var(--pagebannerHeight) + 100px));
+ margin-top: calc((var(--pagebannerHeight) + 100px) * -1);
+ pointer-events: none;
+</pre></code>
 
 Notes: 
 scroll margin doesn’t work on Safari, please refer to (link: caniuse text: https://caniuse.com/?search=scroll-margin-top)

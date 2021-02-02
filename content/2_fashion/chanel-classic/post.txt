@@ -2,6 +2,10 @@ Title: Chanel Classic
 
 ----
 
+Heading: Chanel Classic
+
+----
+
 Featured: false
 
 ----

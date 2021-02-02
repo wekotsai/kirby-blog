@@ -1,8 +1,8 @@
-Title: Shop vintage
+Title: Fashion sustainability
 
 ----
 
-Heading: Shop vintage
+Heading: Fashion sustainability
 
 ----
 
@@ -10,7 +10,7 @@ Featured: false
 
 ----
 
-Tags: Vintage
+Tags: 
 
 ----
 

@@ -17,7 +17,10 @@ Tags: PHP
 Text:
 
 ### Target element
-A DOMString representing the position relative to the targetElement; must match (case-insensitively) one of the following strings: `element.insertAdjacentText(‘ beforehand ’,  ‘ Hiya ’);`
+A DOMString representing the position relative to the targetElement; must match (case-insensitively) one of the following strings: 
+<pre><code class="language-css">
+element.insertAdjacentText('beforehand', 'Tea');
+</pre></code>
 1. 'beforebegin': Before the targetElement itself.
 2. 'afterbegin': Just inside the targetElement, before its first child.
 3. 'beforeend': Just inside the targetElement, after its last child.
