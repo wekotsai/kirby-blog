@@ -277,7 +277,7 @@ header {
     
     .blog {
       grid-template-columns: none;
-      padding: 3rem;
+      padding: 2rem;
     }
 
     .blog-title {
@@ -298,7 +298,7 @@ header {
     }
   
     header {
-      padding: 1rem 2em;
+      padding: 1rem 2rem;
       margin: 0;
       align-items: start;
       display: block;
@@ -320,8 +320,10 @@ header {
     }
   
     .title {
-      font-size: 8vw; 
-      margin-top: -32rem;
+      font-size: 3em;
+      text-align: left;
+      margin-top: -27rem;
+}
     }
 
     /* HAMBURGER MOBILE */
